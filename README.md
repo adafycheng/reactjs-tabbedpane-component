@@ -26,7 +26,7 @@ const contentData = {
     },
     {
       "subject": "Assumptions",
-      "text": "This is content of Assumptions"
+      "text": "<ul><li>Assumption 1</li><li>Assumption 2</li><li>Assumption 3</li><li>Assumption 4</li></ul>"
     },
     {
       "subject": "Technical Design",

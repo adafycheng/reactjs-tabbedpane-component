@@ -24,7 +24,7 @@ const TabbedPaneComponent = ({data}) => {
         let newDiv = $("<div class=" + styles.navbarDiv + "></div>");
         let newAnchor = $("<a></a>").text(data.contents[i].subject).attr("title", data.contents[i].text);
         newDiv.append(newAnchor);
-        newAnchor.click(function(){ $("#paneContent").text( this.title ); });
+        newAnchor.click(function(){ $("#paneContent").html( this.title ); });
         $("#navbar").append(newDiv);
 
       }
