@@ -1,10 +1,35 @@
 import React from 'react'
 
-import { ExampleComponent } from 'reactjs-tabbedpane-component'
+import TabbedPaneComponent from 'reactjs-tabbedpane-component'
 import 'reactjs-tabbedpane-component/dist/index.css'
 
+const contentData = {
+  "contents": [
+    {
+      "subject": "Overview",
+      "text": "This is content of Overview"
+    },
+    {
+      "subject": "Assumptions",
+      "text": "This is content of Assumptions"
+    },
+    {
+      "subject": "Technical Design",
+      "text": "This is content of Technical Design"
+    },
+    {
+      "subject": "Data Design",
+      "text": "This is content of Data Design"
+    },
+    {
+      "subject": "Conclusion",
+      "text": "This is content of Conclusion"
+    }
+  ]
+}
+
 const App = () => {
-  return <ExampleComponent text="Create React Library Example 😄" />
+  return <TabbedPaneComponent data={contentData} />
 }
 
 export default App

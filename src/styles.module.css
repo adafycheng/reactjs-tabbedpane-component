@@ -1,9 +1,26 @@
-/* add css module styles here (optional) */
+body {
+  background-color: #FFF;
+  margin: 0;
+  padding: 0;
+}
 
-.test {
-  margin: 2em;
-  padding: 0.5em;
-  border: 2px solid #000;
-  font-size: 2em;
-  text-align: center;
+.pane {
+  display: flex;
+}
+
+.navbarDiv {
+  background-color: #b366ff;
+  border-radius: 5px;
+  color: #fff;
+  margin: 10px;
+  padding: 10px;
+}
+
+.paneContent {
+  background-color: #d966ff;
+  border-radius: 5px;
+  color: #fff;
+  padding: 10px;
+  margin: 10px 10px 10px 0;
+  width: 100%;
 }
