@@ -1,6 +1,12 @@
+$pane-font-color: #FFF;
+
 body {
   margin: 0;
   padding: 0;
+}
+
+#navbar a, #paneContentDiv a {
+    color: $pane-font-color;
 }
 
 .pane {
@@ -10,7 +16,7 @@ body {
 .navbarDiv {
   background-color: #b366ff;
   border-radius: 5px;
-  color: #fff;
+  color: $pane-font-color;
   margin: 10px;
   padding: 10px;
   cursor: pointer;
@@ -19,9 +25,8 @@ body {
 .paneContent {
   background-color: #d966ff;
   border-radius: 5px;
-  color: #fff;
+  color: $pane-font-color;
   padding: 10px;
   margin: 10px 10px 10px 0;
   width: 100%;
 }
-
