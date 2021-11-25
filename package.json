@@ -51,7 +51,6 @@
     "dist"
   ],
   "dependencies": {
-    "jquery": "^3.6.0",
-    "reactjs-tabbedpane-component": "^1.0.0"
+    "jquery": "^3.6.0"
   }
 }
