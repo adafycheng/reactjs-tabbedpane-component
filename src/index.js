@@ -20,11 +20,11 @@ const TabbedPaneComponent = ({data}) => {
     if (data != undefined) {
       for (let i=0; i<data.contents.length; i++) {
         contentStr += data.contents[i].subject;
-        let newDiv = $("<div class=" + styles.navbarDiv + "></div>");
+        let newDiv = $("<div class=" + styles.navbar + "></div>");
         let newAnchor = $("<a class=\"paneLink\"></a>").text(data.contents[i].subject).attr("data-text", data.contents[i].text);
         newDiv.append(newAnchor);
         newAnchor.click(function(){ $("#paneContentDiv").html( $(this).data("text") ); });
-        $("#navbar").append(newDiv);
+        $("#navbarDiv").append(newDiv);
       }
       if (data.contents.length > 0) {
         // Get the first link and click.
@@ -37,7 +37,7 @@ const TabbedPaneComponent = ({data}) => {
 
   return (
     <div id="pane" className={styles.pane}>
-      <div id="navbar"></div>
+      <div id="navbarDiv"></div>
       <div id="paneContentDiv" className={styles.paneContent}></div>
     </div>
   )

@@ -5,15 +5,16 @@ body {
   padding: 0;
 }
 
-#navbar a, #paneContentDiv a {
-    color: $pane-font-color;
-}
-
 .pane {
   display: flex;
 }
 
-.navbarDiv {
+.navbar a, .paneContent a {
+    color: #FCC;
+    text-decoration: none;
+}
+
+.navbar {
   background-color: #b366ff;
   border-radius: 5px;
   color: $pane-font-color;
