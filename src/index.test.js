@@ -1,7 +1,26 @@
-import { ExampleComponent } from '.'
+import { TabbedPaneComponent } from '.'
+import React from 'react'
 
-describe('ExampleComponent', () => {
+const contentData = {
+  contents: [
+    {
+      subject: 'Overview',
+      text: 'This is content of Overview'
+    },
+    {
+      subject: 'Assumptions',
+      text: '<ul><li>Assumption 1</li><li>Assumption 2</li><li>Assumption 3</li><li>Assumption 4</li></ul>'
+    },
+    {
+      subject: 'Technical Design',
+      text: 'This is content of Technical Design'
+    }
+  ]
+}
+
+describe('TabbedPaneComponent', () => {
   it('is truthy', () => {
-    expect(ExampleComponent).toBeTruthy()
+    const pane = <TabbedPaneComponent data={contentData} />
+    expect(pane).toBeTruthy()
   })
 })

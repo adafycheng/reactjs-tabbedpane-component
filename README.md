@@ -19,26 +19,18 @@ import MyComponent from 'reactjs-tabbedpane-component'
 import 'reactjs-tabbedpane-component/dist/index.css'
 
 const contentData = {
-  "contents": [
+  contents: [
     {
-      "subject": "Overview",
-      "text": "This is content of Overview"
+      subject: 'Overview',
+      text: 'This is content of Overview'
     },
     {
-      "subject": "Assumptions",
-      "text": "<ul><li>Assumption 1</li><li>Assumption 2</li><li>Assumption 3</li><li>Assumption 4</li></ul>"
+      subject: 'Assumptions',
+      text: '<ul><li>Assumption 1</li><li>Assumption 2</li><li>Assumption 3</li><li>Assumption 4</li></ul>'
     },
     {
-      "subject": "Technical Design",
-      "text": "This is content of Technical Design"
-    },
-    {
-      "subject": "Data Design",
-      "text": "This is content of Data Design"
-    },
-    {
-      "subject": "Conclusion",
-      "text": "This is content of Conclusion"
+      subject: 'Technical Design',
+      text: 'This is content of Technical Design'
     }
   ]
 }
