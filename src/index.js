@@ -2,7 +2,6 @@ import React from 'react'
 import styles from './styles.module.scss'
 import $ from 'jquery'
 
-
 const TabbedPaneComponent = ({ data }) => {
   $(function () {
     // read the input JSON content
