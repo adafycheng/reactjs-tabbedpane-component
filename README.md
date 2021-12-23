@@ -42,6 +42,10 @@ class Example extends Component {
 }
 ```
 
+![Example Image 1](example/images/example1.png)
+
+![Example Image 2](example/images/example2.png)
+
 ## License
 
 MIT © [adafycheng](https://github.com/adafycheng)
