@@ -15,7 +15,7 @@ npm install --save reactjs-tabbedpane-component
 ```jsx
 import React, { Component } from 'react'
 
-import MyComponent from 'reactjs-tabbedpane-component'
+import TabbedPane from 'reactjs-tabbedpane-component'
 import 'reactjs-tabbedpane-component/dist/index.css'
 
 const contentData = {
@@ -37,7 +37,7 @@ const contentData = {
 
 class Example extends Component {
   render() {
-    return <MyComponent data={contentData} />
+    return <TabbedPane data={contentData} />
   }
 }
 ```
@@ -45,6 +45,14 @@ class Example extends Component {
 ![Example Image 1](example/images/example1.png)
 
 ![Example Image 2](example/images/example2.png)
+
+## API
+
+`<TabbedPane>`
+
+### props
+
+* *data*: JSON defining the tabs.  HTML tags are supported.
 
 ## License
 
