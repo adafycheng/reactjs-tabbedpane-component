@@ -1,6 +1,4 @@
-# This is a basic workflow to help you get started with Actions
-
-name: CI, using Snyk with continue on error
+name: CI Publish, with security check using Snyk
 
 # Controls when the workflow will run
 on:
@@ -28,7 +26,6 @@ jobs:
           command: monitor
           
   build:
-    # The type of runner that the job will run on
     runs-on: ubuntu-latest
 
     strategy:
@@ -49,12 +46,10 @@ jobs:
       - run: npm test
 
   publish:
-    # The type of runner that the job will run on
     runs-on: ubuntu-latest
 
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
-      # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v2
       - name: Use Node.js
         uses: actions/setup-node@v2
