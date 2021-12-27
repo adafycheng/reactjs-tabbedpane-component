@@ -46,7 +46,7 @@ jobs:
       - run: npm test
 
   publish:
-    needs: build
+    needs: [security, build]
     runs-on: ubuntu-latest
 
     # Steps represent a sequence of tasks that will be executed as part of the job
