@@ -6,7 +6,7 @@ const TabbedPaneComponent = ({ data }) => {
   $(function () {
     // read the input JSON content
     if (data !== undefined) {
-      console.log("data.contents.length: " + data.contents.length)
+      console.log('data.contents.length: ' + data.contents.length)
       $('#navbarDiv').empty();
       for (let i = 0; i < data.contents.length; i++) {
         const newDiv = $('<div class=' + styles.navbar + '></div>')
