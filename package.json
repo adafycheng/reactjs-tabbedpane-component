@@ -1,6 +1,6 @@
 {
   "name": "reactjs-tabbedpane-component",
-  "version": "1.0.14",
+  "version": "1.0.15",
   "description": "A tabbed pane component using React.js",
   "author": "adafycheng",
   "license": "MIT",
@@ -53,6 +53,7 @@
   ],
   "dependencies": {
     "jquery": "^3.6.1",
-    "sass": "^1.49.10"
+    "sass": "^1.49.10",
+    "yarn": "^1.22.19"
   }
 }
